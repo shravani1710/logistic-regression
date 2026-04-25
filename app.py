@@ -8,8 +8,6 @@ st.title("🚢 Titanic Survival Predictor")
 st.markdown("Enter passenger details below to predict survival using a **Logistic Regression** model.")
 st.markdown("---")
 
-# Train model directly inside the app — no pickle needed
-@st.cache_resource
 def train_model():
     url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
     data = pd.read_csv(url)
